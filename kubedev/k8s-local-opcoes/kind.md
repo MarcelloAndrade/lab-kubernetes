@@ -9,6 +9,8 @@ chmod +x ./kind
 mv ./kind /some-dir-in-your-PATH/kind
 ```
 
+#
+
 Create
 ```
 kind create cluster
@@ -16,12 +18,16 @@ or
 kind create cluster --name name-cluster
 ```
 
+#
+
 Test
 ```
 kind get clusters
 kubectl get nodes
 docker container ls
 ```
+
+#
 
 Delete 
 ```
