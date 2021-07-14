@@ -2,7 +2,6 @@
 
  Multipass / Micro K8S é uma ótima maneira de criar clusters Kubernetes para ambientes de desenvolvimento.
 
- ---
 
 ## Multipass 
 
@@ -38,8 +37,6 @@ multipass shell k8s
 multipass exec k8s -- touch test.txt
 ```
 
----
-
 ## MicroK8s
 
 MicroK8s é o K8s de nível de produção mais simples, leve muito utilizado para ambiente de desenvolvimento 
@@ -64,7 +61,7 @@ multipass exec k8s -- /snap/bin/microk8s.kubectl get pods
 ```
 
 ----
-### - _Importante_
+### _Importante_
 
 Apontar kubectl local para k8s virtual criado com multipass
 ```
@@ -74,7 +71,7 @@ Copiar configuracoes para arquivo $HOME/.kube/config
 
 ---
 
-### - _Adicionar um segundo node no cluster_
+### Adicionar um segundo node no cluster
 
  - Repita os passos para criar um microk8s e suas configuracoes
  - Entre no node principal via multipass e execute o comando _microk8s add-node_
