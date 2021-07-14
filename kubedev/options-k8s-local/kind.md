@@ -30,8 +30,6 @@ or
 kind delete name-cluster
 ```
 
----
-
 ## Criar cluster com base em especificação .yaml
 ```yaml
 kind: Cluster
