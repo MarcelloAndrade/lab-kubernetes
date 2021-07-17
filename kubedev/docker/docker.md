@@ -29,3 +29,13 @@ docker container run -d -p 8080:80 nginx
 ```
 
 #
+
+```
+docker image history name-image
+```
+
+#
+remove todos os containers que estão parados.
+```
+docker container prune 
+```
