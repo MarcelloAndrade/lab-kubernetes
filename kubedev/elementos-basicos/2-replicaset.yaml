@@ -1,0 +1,20 @@
+apiVersion: apps/v1
+kind: ReplicaSet
+metadata:
+  name: lab-replica-set
+spec:
+  replicas: 1
+  selector:
+    matchLabels:      
+      app: lab-replica-set
+  template:
+    metadata:
+      name: lab-replica-set
+      labels:
+        app: lab-replica-set
+    spec:
+      containers:
+        - name: lab-replica-set-container
+          image: nginx
+          #ports:
+          #  - containerPort: <Port>
