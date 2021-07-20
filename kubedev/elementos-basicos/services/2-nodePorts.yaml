@@ -1,0 +1,13 @@
+# NodePort - Expõe o serviço sob a mesma porta em cada nó selecionado no cluster usando NAT. 
+# Faz o serviço acessível externamente ao cluster usando <NodeIP>:<NodePort>
+apiVersion: v1
+kind: Service
+metadata:
+  name: lab-service-node-port
+spec:
+  type: NodePort  
+  selector:
+    app: mesmo-selector-dos-pods-ou-replicaset-ou-deploymentes
+  ports:
+  - port: 80
+    targetPort: 8080

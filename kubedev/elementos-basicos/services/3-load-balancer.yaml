@@ -1,0 +1,13 @@
+# LoadBalancer - Cria um balanceador de carga externo no provedor de nuvem atual (se suportado) 
+# e assinala um endereço IP fixo e externo para o serviço
+apiVersion: v1
+kind: Service
+metadata:
+  name: lab-service-load-balancer
+spec:
+  type: LoadBalancer  
+  selector:
+    app: mesmo-selector-dos-pods-ou-replicaset-ou-deploymentes
+  ports:
+  - port: 80
+    targetPort: 8080

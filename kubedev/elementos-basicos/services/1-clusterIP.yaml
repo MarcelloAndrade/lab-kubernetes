@@ -1,0 +1,14 @@
+# Service - Expõe um endereço IP interno no cluster de um conjunto de Pods.
+# ClusterIP - Expõe somente IP alcançável de dentro do cluster.
+apiVersion: v1
+kind: Service
+metadata:
+  name: lab-service-cluster-ip
+spec:
+  type: ClusterIP
+  selector:
+    app: mesmo-selector-dos-pods-ou-replicaset-ou-deploymentes
+  ports:
+  - protocol: TCP
+    port: 80
+    targetPort: 8080

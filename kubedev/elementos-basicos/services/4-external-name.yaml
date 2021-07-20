@@ -1,0 +1,11 @@
+# ExternalName - Expõe o serviço usando um nome arbitrário 
+# (especificado através de externalName na especificação spec) retornando um registro de CNAME com o nome.
+apiVersion: v1
+kind: Service
+metadata:
+  name: lab-service-external-name
+spec:
+  type: ExternalName
+  externalName: veronez.dev
+  selector:
+    app: mesmo-selector-dos-pods-ou-replicaset-ou-deploymentes
