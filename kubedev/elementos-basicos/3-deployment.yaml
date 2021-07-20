@@ -1,3 +1,4 @@
+# Gerencia o ReplicaSet para escutar alteracoes de imagens ou outros recursos.
 apiVersion: apps/v1
 kind: Deployment
 metadata:

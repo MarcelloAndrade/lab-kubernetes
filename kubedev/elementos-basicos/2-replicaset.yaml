@@ -1,3 +1,4 @@
+# O objetivo de um ReplicaSet é manter um conjunto estável de pods em execução a qualquer momento
 apiVersion: apps/v1
 kind: ReplicaSet
 metadata:

@@ -1,3 +1,4 @@
+# Os pods são as menores unidades de computação no Kubernetes.
 apiVersion: v1
 kind: Pod
 metadata:
